@@ -6,6 +6,7 @@ class Students{
   double? cgpa;
   String? email;
   static String institute = "luminar";
+  static final String course = "flutter";
 
 }
 
@@ -42,4 +43,6 @@ void main() {
   print(st1.name);
   print(st2.name);
   print(st3.name);
+
+  print("course : ${Students.course}");
 }
