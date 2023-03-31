@@ -52,4 +52,36 @@ void main(){
   print("z !=10 =${z !=10}");
 
 
+  ///logical operators &&  ||  !(expression)
+  String username = "Admin";
+  String pswd     = "admin@123";
+  int otp         =  7089;
+  print(username  =="Admin" && pswd == 'admin@123'   && otp == 70 );
+  print(username == "Admin" && pswd == 'Admin@123'  || otp == 620);
+  print( !(otp == 8079));
+
+
+  ///Bitwise operator
+  int i  = 10;  // 1010      1 = true    0 = false
+  int j  = 3;   // 0011
+  /// i & j    =   0010 = 2
+  /// i | j    =   1011 = 11
+  /// i ^ j    =   1001 = 9
+  print(i & j);
+  print(i | j);
+  print(i ^ j);
+
+
+  ///conditional operator     condition  ?   true statement  :  false statement;
+  int age = 20;
+  var result  =  (age >= 18)  ?  "welcome to vote"   :  false;
+  print("$result");
+
+
+  ///conditional operator 2    expr1   ??   expr2
+  String? data;
+  var out = data?.length ?? "not a valid data";
+  print(out);
+
+
 }
